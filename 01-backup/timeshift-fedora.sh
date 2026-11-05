@@ -23,4 +23,4 @@ tee /etc/timeshift/timeshift.json <<EOF
   "exclude-apps" : []
 }
 EOF
-timeshift --create --comments "Fresh install" --tags H
+timeshift --create --comments "Fresh install" --tags B,H --snapshot-device {df -Pk / | awk 'NR==2 {print $1}'}
