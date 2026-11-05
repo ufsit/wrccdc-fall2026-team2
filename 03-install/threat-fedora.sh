@@ -1,1 +1,1 @@
-dnf install tcpdump
+dnf install tcpdump busybox -y
