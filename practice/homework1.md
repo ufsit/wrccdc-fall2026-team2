@@ -3,6 +3,7 @@ Title: Homework 1
 ---
 # Install Software
 Before the first practice, you should have the following installed on your PC:
+
 1. Linux. We recommend [Ubuntu][1] or [Kali][2]. If using Windows, you can use 
 WSL or [VirtualBox][3].
 2. [VirtualBox][3]. Please install VirtualBox, as I'll be distributing a VM
