@@ -1,5 +1,5 @@
 apt-get update
-apt-get install timeshift -y
+apt-get install timeshift python3 -y
 tee /etc/timeshift/timeshift.json <<EOF
 {
   "backup_device_uuid" : "",
