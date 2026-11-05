@@ -15,6 +15,8 @@ by red team.
 download the app to avoid sending competition information to third parties.
 6. [Wireshark][4]. Wireshark is useful for threat hunting and is an
 all-around useful too; to have.
+7. [Remmina][8] if you are using Linux. This will allow you to RDP during 
+competition.
 
 
 # Questions
@@ -33,3 +35,4 @@ from PowerShell?
 [5]: https://webrecorder.net/archivewebpage/
 [6]: https://webrecorder.net/replaywebpage/
 [7]: https://docs.docker.com/get-started/get-docker/
+[8]: https://remmina.org/how-to-install-remmina/
