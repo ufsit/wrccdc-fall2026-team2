@@ -1,0 +1,42 @@
+version: '3'
+services:
+  wp:
+    container_name: "wrccdc-prac-wp"
+    image: wordpress:7.1-php8.2-apache
+    ports:
+      - 127.0.0.1:8080:80
+    environment:
+      WORDPRESS_DB_HOST: "fd53:83ed:416c:b856::211"
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: wppass
+      WORDPRESS_DB_NAME: wpdb
+    networks:
+      internal:
+        ipv4_address: "172.23.143.210"
+        ipv6_address: "fd53:83ed:416c:b856::210"
+  db:
+    container_name: "wrccdc-prac-db"
+    image: mysql:8.0
+    ports:
+      - 127.0.0.1:26548:3306
+    environment:
+      MYSQL_DATABASE: wpdb
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: wppass
+      MYSQL_ROOT_PASSWORD: admin
+    networks:
+      internal:
+        ipv4_address: "172.23.143.211"
+        ipv6_address: "fd53:83ed:416c:b856::211"
+
+networks:
+  internal:
+    enable_ipv6: true
+    name: wrccdc-prac-wp-net
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.23.143.208/29"
+          gateway: "172.23.143.209"
+        - subnet: "fd53:83ed:416c:b856::/64"
+          gateway: "fd53:83ed:416c:b856::1"
