@@ -22,15 +22,15 @@ link-images: false
    `fake@email.example`. Make sure to remember your username, password,
    and email! You'll need the email to login.
 7. Close the tab that is now open. Now, open up an Incognito window and
-   go to `http://127.0.0.1:8080`. You should a "Hello world" blog post.
+   go to `http://127.0.0.1:8080`. You should see a "Hello world" blog post.
 
 ## Questions/Tasks
 Once you have WordPress set up, please answer the following questions.
 You probably won't know the answers to these questions initially. Try
 googling or using LLMs to help you find the answer!
 
-*Tip:* If you find your self needing to start the images back up from
-scractch (e.g. changed password but forgot what it is), run the following 
+*Tip:* If you find yourself needing to start the images back up from
+scratch (e.g. changed password but forgot what it is), run the following 
 commands to get a fresh copy of the images:
 ```
 docker compose down
