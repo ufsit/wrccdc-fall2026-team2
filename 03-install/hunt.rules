@@ -1,0 +1,9 @@
+auditctl -w /etc/passwd -p wa -k acct
+auditctl -w /etc/shadow -p wa -k acct
+auditctl -w /etc/group -p wa -k acct
+auditctl -w /etc/sudoers -p wa -k acct
+auditctl -w /etc/ssh -p wa -k ssh
+auditctl -w /etc/cron.d -p wa -k cron
+auditctl -w /etc/pam.d -p wa -k pam
+auditctl -w /etc/ld.so.preload -p wa -k preload
+auditctl -w /etc/systemd/system -p wa -k systemd
